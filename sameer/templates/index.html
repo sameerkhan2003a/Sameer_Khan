@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Khan - MCA Student</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-title {
+            margin-top: 40px;
+        }
+
+        .header-title h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .header-title p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        nav.navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 30px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        nav.navbar .nav-link {
+            color: #333;
+            font-weight: 500;
+            padding: 10px 15px;
+        }
+
+        nav.navbar .nav-link:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 60px 15px;
+        }
+
+        .section-title {
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            font-weight: 600;
+            background: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            background: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            color: #fff;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: #fff;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-primary, .btn-success {
+            background: linear-gradient(65.5deg, rgba(23, 205, 205, 1) -15.1%, rgba(23, 25, 95, 1) 71.5%);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            color: #fff;
+        }
+
+        .btn-primary:hover, .btn-success:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+        }
+
+        .btn-success:hover {
+            background-color: #1e7e34;
+        }
+
+        @media (max-width: 767px) {
+            .header-title h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-title p {
+                font-size: 1rem;
+            }
+
+            nav.navbar {
+                width: 100%;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="static/images/ic_launcher.png" height="170" width="170" alt="Sameer Khan" class="header-logo">
+        <div class="header-title">
+            <h1>Sameer Khan</h1>
+            <p>Fresher | MCA Student</p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="mb-5">
+            <h2 class="section-title">About Me</h2>
+            <p>I am passionate about AI, Data Structures and Algorithms (DSA), and software development, excelling at solving complex problems and optimizing algorithms. I enjoy developing applications using Dart and Flutter for Android, as well as web development with HTML, CSS, JavaScript, and React. While AI interests me, my primary focus is on creating efficient and innovative software solutions. I am open to opportunities for collaboration, internships, and jobs where I can contribute and grow. Let’s connect if you share similar interests or have exciting opportunities.</p>
+        </section>
+
+        <section id="skills" class="mb-5">
+            <h2 class="section-title">Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Programming Languages: <strong>Java, Python, C++, JavaScript, C#, PHP</strong></li>
+                <li class="list-group-item">Web Technologies: <strong>HTML, CSS, React, Django, Flutter, Dart</strong></li>
+                <li class="list-group-item">Database Management: <strong>MySQL, SQL</strong></li>
+                <li class="list-group-item">Data Analysis & Science: <strong>Data Analysis with Python, Machine Learning, Deep Learning</strong></li>
+                <li class="list-group-item">Software Development: <strong>Application Development, Web Applications, Software Testing</strong></li>
+                <li class="list-group-item">Data Structures & Algorithms: <strong>Proficient in algorithms and data structures</strong></li>
+                <li class="list-group-item">AI & ML: <strong>Artificial Intelligence, Large Language Models (LLMs)</strong></li>
+                <li class="list-group-item">Soft Skills: <strong>Team Leadership, Public Speaking, Presentation Skills, Time Management, Attention to Detail</strong></li>
+            </ul>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2 class="section-title">Projects</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">ChatAcademyAI</h5>
+                    <p class="card-text">ChatAcademyAI is an AI-powered voice tutor that allows users to communicate directly and get help with academic questions or learn new things.</p>
+                    <a href="https://chatacademyai.onrender.com/" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">CodeSensei</h5>
+                    <p class="card-text">CodeSensei is an AI-powered coding tutor that allows users to select the language they want to learn and their current level of expertise, and then start learning.</p>
+                    <a href="https://codesensei.onrender.com/" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">EchoEssence</h5>
+                    <p class="card-text">Echo Essence is a personal AI-powered language translator that translates audio files into your preferred language, helping with understanding foreign content and learning new languages.</p>
+                    <a href="https://echo-essence-z3gf.onrender.com/" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="mb-5">
+            <h2 class="section-title">Achievements</h2>
+            <ul class="list-group">
+                <li class="list-group-item">1st Place - Technica seminar competition, Vidyavahini First Grade and PG College, Tumakuru, Jul 2023. Topic: Duality of Artificial Intelligence.</li>
+                <li class="list-group-item">1st Place - National Faculty Development Program Quiz, Seshadripuram College, Tumakuru, Jun 2023. Web Development and Animation Quiz.</li>
+                <li class="list-group-item">1st Place - District Level Poster Presentation, University College of Science, Tumakuru, Feb 2023. Poster on Neural Networks.</li>
+                <li class="list-group-item">Secured 127th Rank in PGCET 2023. Post-Graduation Entrance Exam with over 16,000 participants.</li>
+            </ul>
+        </section>
+
+        <section id="resume" class="mb-5">
+            <h2 class="section-title">Resume</h2>
+            <p><a href="static/images/Sameer Khan A Resume.pdf" class="btn btn-success" download>Download My Resume</a></p>
+        </section>
+
+        <section id="contact" class="mb-5">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sameer-khan-a-" target="_blank" rel="noopener noreferrer">Sameer Khan</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sameerkhan2zaz@gmail.com">sameerkhan2zaz@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+917892842119">789-284-2119</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sameer Khan. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
